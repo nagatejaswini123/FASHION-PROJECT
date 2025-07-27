@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('P11.jpg'); /* The background image link */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Header and Navigation */
+.header {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+    padding: 10px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #d9534f; /* Matches the red color from the text */
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+    background-color: #fff;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    width: 120px;
+}
+
+.search-icon, .cart-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+/* Hero Content Section */
+.hero-content { position: absolute; 
+     top: 50%; 
+     left: 6%; /* Moved 2% to the left */
+     transform: translateY(-50%); color: #333; 
+     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); }
+ 
+
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.hero-content h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #d9534f; /* Red color for the headline */
+    margin: 10px 0 20px;
+}
+
+.features {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.features p {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Custom bullet points */
+.features p:first-of-type {
+    list-style: none; /* Removes the bullet for the first line */
+}
+
+.features p:not(:first-of-type)::before {
+    content: "•";
+    color: #d9534f;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.order-now-btn {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.order-now-btn:hover {
+    background-color: #c9302c;
+    transform: translateY(-2px);
+}
+
+.hidden-icons-text {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+/* Custom bullet points */
+.features p:first-of-type {
+    list-style: none; /* Removes the bullet for the first line */
+}
+
+.features p:not(:first-of-type)::before {
+    content: "•";
+    color: #d9534f;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
